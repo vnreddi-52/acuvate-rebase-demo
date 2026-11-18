@@ -1,10 +1,9 @@
-arr1 = [1, 4, 7, 8, 10]
-arr2 = [2, 3, 9]
-res=[]
-for num in arr1:
-    if num not in res:
-        res.append(num)
-for num in arr2:
-    if num not in res:
-        res.append(num)
-print(sorted(res))
+
+s = input("Enter a string: ")
+res = ""
+for ch in s:
+    res = ch+res
+if res == s:
+    print("Valid Palindrome")
+else:
+    print("Not a palindrome")
